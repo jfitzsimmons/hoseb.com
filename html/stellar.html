@@ -1,0 +1,81 @@
+<html>
+<head>
+    <style>
+        body {font-family: 'Maiden Orange',cursive;font-size: 21px;}
+        .title {float: left;max-width: 80%}
+        .date {float: right; clear: both; margin-bottom:30px;}
+        #div-to-update{ height:600px; width: 100%;}
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Maiden+Orange' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="div-to-update"></div>
+    
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+            
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+            
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        
+        var offset = getUrlParameter('offset');
+        var limit = getUrlParameter('limit');
+        
+        function loadNewContent(){
+            $.ajax({
+                type:'GET',
+                url: 'http://www.stellarbiotechnologies.com/media/press-releases/json',
+                success:function(data){
+                    if(data != ""){
+                        loading = false;
+                        var tr;
+                        var i = 0;
+                        var l = data.news.length;
+                        console.log('jpftest');
+                        if (offset) {i = offset}
+                        if (limit) {l = limit}
+                        for ( i; i < l; i++) {
+                            mku = $('<div class="row">');
+                            mku.append("<span class='title'>" + data.news[i].title + "</span>");
+                            mku.append("<span class='date'>" + data.news[i].published + "</span></div>");
+                            $('#div-to-update').append(mku);
+                        }
+                    }
+                }
+            });
+        }
+        loadNewContent();
+
+/*$('#div-to-update').on('scroll', function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+        if(!loading){
+        loading = true;
+        loadNewContent();//call function to load content when scroll reachs DIV bottom
+        }
+        }
+        })
+        
+        
+        //scroll to PAGE's bottom
+        var winTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        if  ((winTop / (docHeight - winHeight)) > 0.95) {
+        if(!loading){
+        loading = true;
+        loadNewContent();//call function to load content when scroll reachs PAGE bottom
+        }
+        }*/
+    </script>
+</body>
+</html>

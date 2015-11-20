@@ -1,0 +1,52 @@
+{
+	"feeds": [
+		{
+			"feedURL": "http://blog.agencypja.com/feed/",
+			"title": "PJA Blog",
+			"siteURL": "http://agencypja.com" ,
+			"thumbs": "thumbs/a-a-typeface-illus.jpg"
+		},
+		{
+			"feedURL": "http://feeds.mashable.com/Mashable",
+			"title": "Mashable",
+			"siteURL": "http://www.mashable.com",
+			"thumbs": "thumbs/valentine-illu-icon.jpg"
+		},
+		{
+			"feedURL": "http://feeds2.feedburner.com/ProgrammableWeb",
+			"title": "ProgrammableWeb",
+			"siteURL": "http://ProgrammableWeb",
+			"thumbs": "thumbs/coded-icon-set.jpg"
+		},
+		{
+			"feedURL": "http://feeds.theonion.com/theonion/daily",
+			"title": "The Onion",
+			"siteURL": "http://www.theonion.com",
+			"thumbs": "thumbs/pixelsdailyacademia.png" 
+		},
+		{
+			"feedURL": "http://blog.boston-baby-photos.com/feed/",
+			"title": "Boston Baby Photos",
+			"siteURL": "http://www.boston-baby-photos.com",
+			"thumbs": "thumbs/illuicon-mouse101.gif"
+		},
+		{
+			"feedURL": "http://evanmcd.tumblr.com/rss",
+			"title": "Evan's Tumblr",
+			"siteURL": "http://evanmcd.tumblr.com",
+			"thumbs": "thumbs/a-a-typeface-illus.jpg"
+		},
+		{
+			"feedURL": "http://feeds.feedburner.com/readwriteweb",
+			"title": "ReadWriteWeb",
+			"siteURL": "http://readwriteweb.com",
+			"thumbs": "thumbs/a-a-typeface-illus.jpg"
+		},
+		{
+			"feedURL": "http://processwire.com/talk/rss/forums/1-processwire-forum-latest-posts/",
+			"title": "ProcessWire forums",
+			"siteURL": "http://processwire.com",
+			"thumbs": "thumbs/a-a-typeface-illus.jpg"
+		}
+	]
+}

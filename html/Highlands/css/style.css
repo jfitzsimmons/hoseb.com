@@ -1,0 +1,89 @@
+/* This class is added on scroll */
+#contentRightContainer .fixed {
+	position: fixed; 
+	top: 0; 
+	height: 70px; 
+	z-index: 1;
+}
+
+
+/* Navigation Settings */
+#contentRightContainer nav {
+	width: 100%;
+	
+}
+#contentRightContainer ul {
+    padding: 0;
+    margin: 0;
+}
+#contentRightContainer nav li {
+	display: table-cell;
+}
+#contentRightContainer nav li.cstm-navitem {
+ background: url('http://hoseb.com/Highlands/imgs/navback.png');
+}
+#contentRightContainer nav li.cstm-navitem a {
+	color: #757575;
+	padding: 0 8px;
+	display:block;
+}
+#contentRightContainer #navbuffer {
+	height: 100px;	
+	display: none;
+}
+#contentRightContainer .signupflag {
+	position: relative;
+	top: 30px;
+}
+#contentRightContainer section {
+	padding: 30px 20px;
+	border-left: 5px solid #fae9a5;
+	border-right: 5px solid #fae9a5;
+}
+
+#contentRightContainer section p{
+	text-align: left;
+	color: #777;
+	display:block;
+	margin: 5px 0;
+}
+
+/* Screens Settings */
+#contentRightContainer #screen1 {
+	background: #fff;
+}
+
+
+
+#contentRightContainer #screen2 {
+	background: #fff;
+}
+
+#contentRightContainer #screen3 {
+	background: #fff;
+}
+#contentRightContainer #screen4 {
+	background: #fff;
+}
+#contentRightContainer #screen5 {
+	background: #fff;
+}
+#contentRightContainer #screen6 {
+	background: #fff;
+}
+#contentRightContainer #screen7 {
+	background: #fff;
+}
+#contentRightContainer .thumblabel {
+	width: 100%;
+	text-align:left;
+	padding-bottom: 20px;
+}
+#contentRightContainer #googlemap {
+	float: right;
+}
+#contentRightContainer #locationcontent {
+	width: 375px;	
+	float: left;
+}
+
